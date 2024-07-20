@@ -1,0 +1,148 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root{
+    --primary-color:#edf082;
+    --text-dark:#333333;
+    --text-light:#ffffff33;
+    --extra-light:#f3f4f6;
+    --max-width:1300px;
+
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background: url('travel.jpg') no-repeat center center;
+    background-size:cover;
+    background-repeat:no-repeat;   
+    margin:0;
+    padding:0;
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+.button {
+    padding: .5rem 1rem;
+    color: var(--extra-light);
+    font-size: 1rem;
+    background-color: #e7be3d;
+    outline: none;
+    border: 2px solid var(--extra-light);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: var(--text-dark);
+
+}
+.container{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:20px;
+    position:relative;
+}
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#e7be3d;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+    color:var(--extra-light);
+}
+.searchbox {
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--extra-light);
+}
+
+
+header nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    padding:1rem;
+    margin:0;
+}
+header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+
+}
+
+header nav ul li a:hover{
+    color:#ff6347;
+}
+header.scrolled{
+    background-color:#555;
+    transition:background-color 0.3s;
+}
+section{
+    padding:2rem;
+    text-align:center;
+    margin-top:4rem;
+}
+#home{
+    
+    padding:4rem 2rem;
+}
+#about{
+    background-color:#43bbf09d;
+    
+}
+#features,#contact{
+    background:#89d5fe4b;
+    margin:0;
+}
+#contact-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#contact-form input, #contact-form textarea {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 400px;
+}
+#contact-form button {
+        padding: .5rem 1rem;
+        color: var(--extra-light);
+        font-size: 1rem;
+        background-color: #e7be3d;
+        outline: none;
+        border: 2px solid var(--extra-light);
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: 0.3s;
+}
+#contact-form button:hover {
+        background-color: var(--text-dark);
+}
+.gradient-square{
+    width:100px;
+    height:100px;
+    background:linear-gradient(to right,#1e3c72,#2a5298);
+    margin:1rem auto;
+}
+.gradient-circle{
+    width:100px;
+    height:100px;
+    background:radial-gradient(circle, #1e3c72,#2a5298);
+    margin:1rem auto;
+}
+footer{
+    background:#333;
+    color:#fff;
+    text-align:center;
+    padding:1rem 0;
+}
